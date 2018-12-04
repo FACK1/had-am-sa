@@ -1,0 +1,34 @@
+{
+  "name": "had-am-sa",
+  "version": "1.0.0",
+  "description": "- As a user I want to search for a artist name, the user will see the name of artist, his img and albums.   - As a user I want to search for a song name, the user will see the name of artist,img for the artist, link to the song and     album.   - As a user I want to search for an album name, the user will see the name of album, artist name and img artist.   - As a user I want to add a song with artist name and the related album and recive a message with Done .",
+  "main": "tests.js",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "eslint": "^5.9.0",
+    "nodemon": "^1.18.7",
+    "pg": "^7.7.1",
+    "psql": "^0.0.1",
+    "supertest": "^3.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape tests/test.js | tap-spec",
+    "start": "node scr/server.js",
+    "div": "nodemon scr/server.js",
+    "lint": "eslint ./*",
+    "lint-fix": "eslint --fix ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACK1/had-am-sa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACK1/had-am-sa/issues"
+  },
+  "homepage": "https://github.com/FACK1/had-am-sa#readme"
+}
