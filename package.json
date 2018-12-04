@@ -16,8 +16,8 @@
   },
   "scripts": {
     "test": "tape tests/test.js | tap-spec",
-    "start": "node scr/server.js",
-    "div": "nodemon scr/server.js",
+    "start": "node src/server.js",
+    "div": "nodemon src/server.js",
     "lint": "eslint ./*",
     "lint-fix": "eslint --fix ./"
   },
