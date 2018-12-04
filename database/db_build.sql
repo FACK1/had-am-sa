@@ -7,11 +7,11 @@ CREATE TABLE IF NOT EXISTS artists (
     img_url     TEXT
 );
 
-INSERT INTO artists (name,img_url) VALUES ('fairouz','https://haya-online.com/wp-content/uploads/2017/09/Fairouz-Poster.jpg');
-INSERT INTO artists (name,img_url) VALUES ('shereen','https://gdb.radiosawa.us/BB648761-0DAC-4B01-B4E0-0BB8AB0330BE_cx0_cy4_cw0_w1023_r1_s.jpg');
-INSERT INTO artists (name,img_url) VALUES ('kathem alsaher','https://pbs.twimg.com/profile_images/819150417770778624/AOyUx8bj_400x400.jpg');
-INSERT INTO artists (name,img_url) VALUES ('asala','https://www.lbcgroup.tv/newsimages/News-P-386898-636657059801782235.jpg');
-INSERT INTO artists (name,img_url) VALUES ('naseef zayton','http://bisara7a.com/wp-content/uploads/2016/02/11380776_1449166888725952_65524611_n1-300x300.jpg');
+INSERT INTO artists (name,img_url) VALUES ('فيروز','https://haya-online.com/wp-content/uploads/2017/09/Fairouz-Poster.jpg');
+INSERT INTO artists (name,img_url) VALUES ('شيرين','https://gdb.radiosawa.us/BB648761-0DAC-4B01-B4E0-0BB8AB0330BE_cx0_cy4_cw0_w1023_r1_s.jpg');
+INSERT INTO artists (name,img_url) VALUES ('كاظم الساهر','https://pbs.twimg.com/profile_images/819150417770778624/AOyUx8bj_400x400.jpg');
+INSERT INTO artists (name,img_url) VALUES ('أصالة','https://www.lbcgroup.tv/newsimages/News-P-386898-636657059801782235.jpg');
+INSERT INTO artists (name,img_url) VALUES ('ناصيف زيتون','http://bisara7a.com/wp-content/uploads/2016/02/11380776_1449166888725952_65524611_n1-300x300.jpg');
 
 -- Table Track
 CREATE TABLE IF NOT EXISTS tracks (
