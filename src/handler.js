@@ -1,9 +1,7 @@
 const path = require('path');
 const fs = require('fs');
-var request1 = require('request');
-var url = require('url');
+const url = require('url');
 const queryString = require('querystring');
-
 const getData=require('../queries/getData.js');
 //const setData=require('../queries/setData.js');
 
@@ -51,9 +49,7 @@ const searchHandler=(request,response)=>{
 
   var { query }=url.parse(request.url);
   var {category}=queryString.parse(query);
-  console.log(category);
   var {text}=queryString.parse(query);
-console.log(text);
     getData(category,text,(err, res) => {
       if (err){
         response.writeHead(500, { 'Content-Type': 'plain/text' });
