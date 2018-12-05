@@ -31,11 +31,11 @@
   
  
 # How to run our site on your machine?
-- git clone this repo **()**
+- git clone this repo **(https://github.com/FACK1/had-am-sa.git)**
 - Open your **command line**.
 - Put in terminal : **npm install** .
 - Then put in terminal : **npm run nodemon**  to run the server.
-- Open your browser and put in terminal: **localhost:3000**.
+- Open your browser and put in terminal: **localhost:3003**.
 
 # Test coverage
 
