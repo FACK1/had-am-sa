@@ -7,4 +7,5 @@ if(!DATABASE_URL){
 const option = {
   connectionString : DATABASE_URL
 };
+option.ssl = option.host !== 'localhost';
 module.exports = new Pool(option);
