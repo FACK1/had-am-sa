@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../public/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Music Database</title>
+   </head>
+   <header>
+   </header>
+   <body>
+      <section id="search">
+         <h2>Search</h2>
+         <div id="searchContainer">
+            <div>
+               <input type="text" name="search" value="">
+               <button type="button" id="searchButton"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="radio">
+               <div>
+                  <label for="category1"><input type="radio" name="category" value="artist" checked>Artist</label>
+               </div>
+               <div>
+                  <label for="category2"><input type="radio" name="category" value="song">Song</label>
+               </div>
+            </div>
+         </div>
+         <div class="searchResult">
+            <!-- add the results here by dom manipulation -->
+         </div>
+      </section>
+      <section id="add">
+         <h2>Add</h2>
+         <form action="/add" method="POST">
+            <div>
+               <label for="artistName">Artist</label>
+               <input type="text" name="add" id="artistName" value="" placeholder="Artist name..">
+               <label for="artistImage">Artist Image Url</label>
+               <input type="text" name="add" id="artistImage" value="" placeholder="Artist image url..">
+               <label for="songName">Song</label>
+               <input type="text" id="songName" value="" placeholder="Song name..">
+               <label for="songLink">Song Link</label>
+               <input type="text" id="songLink" value="" placeholder="Song link..">
+            </div>
+            <input type="submit" value="+">
+         </form>
+      </section>
+      <link type="text/javascript"  src="../public/dom.js">
+   </body>
+</html>
