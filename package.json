@@ -4,6 +4,7 @@
   "description": "- As a user I want to search for a artist name, the user will see the name of artist, his img and albums.   - As a user I want to search for a song name, the user will see the name of artist,img for the artist, link to the song and     album.   - As a user I want to search for an album name, the user will see the name of album, artist name and img artist.   - As a user I want to add a song with artist name and the related album and recive a message with Done .",
   "main": "tests.js",
   "dependencies": {
+    "alert-node": "^1.2.3",
     "env2": "^2.2.2",
     "pg": "^7.7.1"
   },
