@@ -27,21 +27,29 @@
             </div>
          </div>
          <div id="searchResult">
-            <!-- add the results here by dom manipulation -->
-         </div>
+            <div class="songs_container">
+              <!-- <img class="img_artist" src="https://haya-online.com/wp-content/uploads/2017/09/Fairouz-Poster.jpg" class="artist-img">
+              <div>
+                <h1 class="name_artist">Firouz</h1>
+                  <a class="songs" href="#">Sama</a><br>
+                  <a class="songs" href="#">hadeel</a><br>
+                  <a class="songs" href="#">aman</a><br>
+                </div> -->
+            </div>
+          </div>
       </section>
       <section id="add">
          <h2>Add</h2>
-         <form action="/add" method="get">
+         <form action="/add" method="POST">
             <div>
                <label for="artistName">Artist</label>
-               <input type="text" name="add" id="artistName" value="" placeholder="Artist name..">
+               <input type="text" name="artistName" id="artistName" value="" placeholder=" Artist name..">
                <label for="artistImage">Artist Image Url</label>
-               <input type="text" name="img" id="artistImage" value="" placeholder="Artist image url..">
+               <input type="text" name="img" id="artistImage" value="" placeholder=" Artist image url..">
                <label for="songName">Song</label>
-               <input type="text" id="songName" value="" placeholder="Song name..">
+               <input type="text" id="songName" name="songName" value="" placeholder=" Song name..">
                <label for="songLink">Song Link</label>
-               <input type="text" id="songLink" value="" placeholder="Song link..">
+               <input type="text" id="songLink" name="songLink" value="" placeholder=" Song link..">
             </div>
             <input type="submit" value="+">
          </form>
