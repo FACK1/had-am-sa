@@ -1,7 +1,7 @@
 const http = require('http');
 const router = require('./router.js');
 const server = http.createServer(router);
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3003;
 server.listen(PORT, function(){
-    console.log("server is up and running on port 3001!");
+    console.log(`server is up and running on port ${PORT}!`);
   });

@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-//const getData=require('../queries/getData.js');
+const url = require('url');
+const queryString = require('querystring');
+const getData=require('../queries/getData.js');
 //const setData=require('../queries/setData.js');
 
 //------------------------------------------------
@@ -45,6 +47,19 @@ const  publicHandler=(request,response)=>{
 //------------------------------------------------
 const searchHandler=(request,response)=>{
 
+  var { query }=url.parse(request.url);
+  var {category}=queryString.parse(query);
+  var {text}=queryString.parse(query);
+    getData(category,text,(err, res) => {
+      if (err){
+        response.writeHead(500, { 'Content-Type': 'plain/text' });
+        response.end("Server Error");
+      }
+      else {
+      response.writeHead(200, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify(res));
+      }
+    });
 }
 const addHandler=(request,response)=>{
 
