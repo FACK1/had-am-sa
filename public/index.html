@@ -14,7 +14,7 @@
          <h2>Search</h2>
          <div id="searchContainer">
             <div>
-               <input type="text" name="search" value="">
+               <input type="text" name="search" value="" id="search_text" required>
                <button type="button" id="searchButton"><i class="fa fa-search"></i></button>
             </div>
             <div class="radio">
@@ -26,18 +26,18 @@
                </div>
             </div>
          </div>
-         <div class="searchResult">
+         <div id="searchResult">
             <!-- add the results here by dom manipulation -->
          </div>
       </section>
       <section id="add">
          <h2>Add</h2>
-         <form action="/add" method="POST">
+         <form action="/add" method="get">
             <div>
                <label for="artistName">Artist</label>
                <input type="text" name="add" id="artistName" value="" placeholder="Artist name..">
                <label for="artistImage">Artist Image Url</label>
-               <input type="text" name="add" id="artistImage" value="" placeholder="Artist image url..">
+               <input type="text" name="img" id="artistImage" value="" placeholder="Artist image url..">
                <label for="songName">Song</label>
                <input type="text" id="songName" value="" placeholder="Song name..">
                <label for="songLink">Song Link</label>
@@ -46,6 +46,7 @@
             <input type="submit" value="+">
          </form>
       </section>
-      <link type="text/javascript"  src="../public/dom.js">
+
+      <script type="text/javascript"  src="../public/dom.js"></script>
    </body>
 </html>
