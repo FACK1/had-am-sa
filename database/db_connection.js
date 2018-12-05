@@ -3,9 +3,6 @@ const url = require('url');
 require('env2')('config.env');
 let { DATABASE_URL } = process.env;
 
-if (process.env.NODE_ENV === "test") {
-  DATABASE_URL = process.env.TEST_DB_URL;
-}
 if(!DATABASE_URL){
   throw Error('No Data Base URL');
 }
