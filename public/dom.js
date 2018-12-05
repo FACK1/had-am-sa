@@ -7,13 +7,11 @@ function search() {
 	search_btn.addEventListener("click", function (e) {
 			var category;
       const text = textInput.value;
-      console.log(text);
 			if (artistflag.checked) {
 				category = "artist";
 			} else {
 				category = "song";
 			}
-
 			fetch(`/search?category=${category}&text=${text}`)
 				.then(function (response) {
 					return response.json();
