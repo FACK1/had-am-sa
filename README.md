@@ -1,4 +1,5 @@
 # Music DB
+App to search about songs and artists, seraching by name of song or artist . 
 # User journey :
   - As a user I want to search for a artist name, the user will see the name of artist, his img and albums.
   - As a user I want to search for a song name, the user will see the name of artist,img for the artist, link to the song and     album.
