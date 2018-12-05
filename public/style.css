@@ -1,6 +1,6 @@
 header {
 	height: 300px;
-	background-image: Url('music/15r.jpg');
+	background-image: Url('15r.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
@@ -12,9 +12,9 @@ body {
 }
 
 h2 {
-	margin-left: 6%;
 	margin-bottom: 10px;
-	color: #8F641B
+	color: #8F641B;
+text-align: center;
 }
 
 #searchContainer {
@@ -22,6 +22,7 @@ h2 {
 	flex-flow: row nowrap;
 	align-items: center;
 	margin-left: 3%;
+	justify-content: space-around;
 }
 
 input[type=text] {
@@ -82,7 +83,7 @@ form {
 	display: flex;
 	margin-left: 3%;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 form label {
