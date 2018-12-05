@@ -43,19 +43,19 @@ CREATE TABLE IF NOT EXISTS track_artist (
 );
 
 INSERT INTO track_artist (track_id, artist_id) VALUES (1,1);
-INSERT INTO track_artist (track_id, artist_id) VALUES (1,2);
-INSERT INTO track_artist (track_id, artist_id) VALUES (1,3);
-INSERT INTO track_artist (track_id, artist_id) VALUES (2,4);
-INSERT INTO track_artist (track_id, artist_id) VALUES (2,5);
-INSERT INTO track_artist (track_id, artist_id) VALUES (2,6);
-INSERT INTO track_artist (track_id, artist_id) VALUES (3,7);
-INSERT INTO track_artist (track_id, artist_id) VALUES (3,8);
-INSERT INTO track_artist (track_id, artist_id) VALUES (3,9);
-INSERT INTO track_artist (track_id, artist_id) VALUES (4,10);
-INSERT INTO track_artist (track_id, artist_id) VALUES (4,11);
-INSERT INTO track_artist (track_id, artist_id) VALUES (4,12);
-INSERT INTO track_artist (track_id, artist_id) VALUES (5,13);
-INSERT INTO track_artist (track_id, artist_id) VALUES (5,14);
-INSERT INTO track_artist (track_id, artist_id) VALUES (5,15);
+INSERT INTO track_artist (track_id, artist_id) VALUES (2,1);
+INSERT INTO track_artist (track_id, artist_id) VALUES (3,1);
+INSERT INTO track_artist (track_id, artist_id) VALUES (4,2);
+INSERT INTO track_artist (track_id, artist_id) VALUES (5,2);
+INSERT INTO track_artist (track_id, artist_id) VALUES (6,2);
+INSERT INTO track_artist (track_id, artist_id) VALUES (7,3);
+INSERT INTO track_artist (track_id, artist_id) VALUES (8,3);
+INSERT INTO track_artist (track_id, artist_id) VALUES (9,3);
+INSERT INTO track_artist (track_id, artist_id) VALUES (10,4);
+INSERT INTO track_artist (track_id, artist_id) VALUES (11,4);
+INSERT INTO track_artist (track_id, artist_id) VALUES (12,4);
+INSERT INTO track_artist (track_id, artist_id) VALUES (13,5);
+INSERT INTO track_artist (track_id, artist_id) VALUES (14,5);
+INSERT INTO track_artist (track_id, artist_id) VALUES (15,5);
 
 COMMIT;
