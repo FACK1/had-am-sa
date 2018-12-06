@@ -29,6 +29,12 @@ function search() {
         })
     }
 
+	function imgError(image) {
+		    image.onerror = "";
+		    image.src = "public/useralt.png";
+		    return true;
+		}
+
 function viewSerachRes(data){
 
         data.map(element => {
@@ -43,6 +49,7 @@ function viewSerachRes(data){
             img_artist.setAttribute('class', 'img_artist');
             img_artist.src = element.img_url;
             img_artist.alt = "artist image";
+						img_artist.setAttribute('onerror','imgError(this);');
 
             var songs_container = document.createElement('div');
             songs_container.setAttribute('class', 'songs_container');
