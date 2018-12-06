@@ -35,7 +35,12 @@ App to search about songs and artists, seraching by name of song or artist .
 - git clone this repo **(https://github.com/FACK1/had-am-sa.git)**
 - Open your **command line**.
 - Put in terminal : **npm install** .
-- Then put in terminal : **npm run nodemon**  to run the server.
+- create database **CREATE DATABASE <database name here>; **
+- create uesrname and password **CREATE USER <desired username to connect to database>;**
+- grant prinileges **GRANT ALL PRIVILEGES ON DATABASE <database name here> TO <desired username entered previously>;**
+- make config.env file and put **DATABASE_URL= postgres://uesrname:password@localhost:5432/dbname**
+- Put in terminal : **node database/db_build.js**.
+- Then put in terminal : **npm run dev**  to run the server.
 - Open your browser and put in terminal: **localhost:3003**.
 
 # Test coverage
