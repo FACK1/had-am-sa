@@ -3,7 +3,9 @@ const fs = require('fs');
 const url = require('url');
 const queryString = require('querystring');
 const getData=require('../queries/getData.js');
-//const setData=require('../queries/setData.js');
+const setData=require('../queries/setData.js');
+const check=require('../queries/checkArtist.js');
+const alert = require('alert-node')
 
 //------------------------------------------------
 const  homeHandler=(request,response)=>{
@@ -61,9 +63,45 @@ const searchHandler=(request,response)=>{
       }
     });
 }
-const addHandler=(request,response)=>{
+
+//-----------------------------------------------
+const addHandler = (request, response) => {
+
+	let data = '';
+	request.on('data', chunk => {
+		data += chunk;
+	});
+
+	request.on('end', (err) => {
+		const {artistName, img,	songName, songLink	} = queryString.parse(data);
+
+		check(artistName, (err, res) => {
+			if (err) {
+				response.writeHead(500, {'Content-Type': 'plain/text'});
+				response.end("Server Error");
+			} else {
+				if (res[0] === undefined) {
+					setData(artistName, img, err => {
+						if (err) {
+							response.writeHead(500, {'Content-Type': 'plain/text'});
+							response.end("Server Error");
+						} else {
+							alert("added!");
+							response.writeHead(302, {'Location': '/'});
+							response.end();
+						}
+					});
+				} else {
+					alert("already exists");
+					response.writeHead(302, {'Location': '/'});
+					response.end();
+				}
+			}
+		});
+	})
 
 }
+
 //------------------------------------------------
 const pageNotFoundHandler=(request,response)=>{
   response.writeHead(404, {'content-Type': 'text/html'})
