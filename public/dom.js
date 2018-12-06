@@ -17,7 +17,6 @@ function search() {
                     return response.json();
                 })
                 .then(function (data) {
-          console.log(data);
                     if (data.length <= 0) {
                         alert("Sorry, No Match Found");
                     } else {
